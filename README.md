@@ -1,25 +1,21 @@
-# beast-softphone-problem
+# Hunter Foundation
 
 ## Intention
 
-To recreate the problem reported here:
+To provide an easy way of handling cross-platform dependency management
 
-https://github.com/boostorg/beast/issues/1798
+This project will create a development environment in which your cmake
+project can build. The intention of this project is to build all the
+dependent libraries from source using the same toolchain as will be used
+by your project.
 
-## Required toolchain
+## Requirements
 
-This program requires a c++11 or better toolchain.
+The following cmake command line arguments must be set:
 
-Some very good toolchains files available here:
+`HUNTER_FOUNDATION_SOURCE_TREE` - the path to your cmake project
 
-https://github.com/ruslo/polly
+The following cmake command line arguments should be set:
 
-in which case you can invoke cmake with:
+`CMAKE_TOOLCHAIN_FILE`
 
-`cmake -DCMAKE_TOOLCHAIN_FILE=<POLLY_DIR>/cxx17.cmake -H<SRC_DIR> -B<BUILD_DIR>`
-
-Where:
-
-* `POLLY_DIR` is the cloned polly repo
-* `SRC_DIR` is the directory containing this file
-* `BUILD_DIR` is the intended build directory (in-source builds are evil)
