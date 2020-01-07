@@ -13,7 +13,7 @@ by your project.
 
 The following cmake command line arguments must be set:
 
-`HUNTER_FOUNDATION_SOURCE_TREE` - the path to your cmake project
+`FOUNDATION_PROJECT` - the path to your cmake project
 
 The following cmake command line arguments should be set:
 
